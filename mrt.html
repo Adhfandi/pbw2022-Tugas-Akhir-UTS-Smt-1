@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="MRT">
+        <meta name="keyword" content="HTML, TAGS, CSS, Element">
+        <meta name="author" content="Helmi Adhfandi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+        <title>Mass Rapit Transit (MRT)</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: calibri;
+            }
+
+            /*Header CSS Start*/
+            header {
+                background-color: rgb(191, 191, 191); 
+                text-align: center;
+                height: 12vh;
+            }
+
+            header img {
+                width: 6vh;
+                border-radius: 5px;
+            }
+
+            header nav {
+                text-align: center;
+                margin-top: 4px;
+            }
+            
+            header nav a {
+                padding: 5px; 
+                margin: 0px;
+                color: black;
+                font-size: 3vh; 
+                text-decoration: none;
+            }
+
+            header nav a:hover {
+                background-color: rgb(214, 214, 214);
+                transition: .5s ease-in-out;
+                transition-delay: .2s;
+                border-radius: 5px;
+            }
+            /*Header CSS End*/
+
+            /*Div CSS Start*/
+            div {
+                background-color: rgba(189, 189, 189, 0.331);
+                height: 85vh;
+                overflow: auto;
+            }
+
+            div h2 {
+                margin: 0px;
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+
+            .p-ket-judul {
+                margin-top: 0px;
+                margin-left: 15px;
+            }
+
+            div form {
+                margin-left: 35px;
+            }
+
+            .input-email {
+                margin-left: 86px;
+            }
+
+            .input-nama {
+                margin-left: 83px;
+            }
+
+            .input-nomor-e-money {
+                margin-left: 15px;
+                margin-bottom: 30px;
+            }
+
+            div form p {
+                margin: 0px;
+            }
+
+            div form select {
+                margin-bottom: 30px;
+            }
+
+            .input-berlangganan {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            /*Div CSS End*/
+
+            /*Footer CSS Start*/
+            footer {
+                text-align: center; 
+                background-color: rgb(191, 191, 191);
+                height: 3vh;
+            }
+
+            footer p {
+                margin: 0px;
+            }
+            /*Footer CSS End*/
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="media/SUBSlogo.jpg" alt="logo">
+            <nav>
+                <a href="indext.html">Home</a>
+                <a href="contactus.html">Contact us</a>
+                <a href="aboutus.html">About us</a>
+            </nav>
+        </header>
+
+        <div>
+            <h2>Berlangganan MRT</h2>
+            <p class="p-ket-judul">Masukkan data diri anda untuk berlangganan paket MRT</p>
+            
+            <form name="berlangganan-mrt">
+                <label>Email </label><input class="input-email" type="email" name="email" required><br>
+                <label>Nama <input class="input-nama" type="text" name="nama" id="nama" required></label><br>
+                <label>Nomor E-Money <input class="input-nomor-e-money" type="number" name="nomor-e-money" id="nomor-e-money" required></label><br>
+
+                <p>Pilih paket langganan :</p>
+                <select name="paketlangganan">
+                    <option value="week">Mingguan</option>
+                    <option value="month">Bulanan</option>
+                    <option value="year">Tahunan</option>
+                </select>
+
+                <p>Pilih jenis paket : </p>
+                <select name="jenispaket">
+                    <option value="personal">Personal</option>
+                    <option value="paketpelajar">Pelajar</option>
+                    <option value="paketkaryawan">Karyawan</option>
+                    <option value="paketkeluarga">Keluarga</option>
+                </select>
+
+                <p>Pilih metode Pembayaran : </p>
+                <select name="metodepembayaran">
+                    <option value="transfer/virtual">Transfer Bank/virtual Account</option>
+                    <option value="kredit/debit">Kartu Kredit/Debit</option>
+                    <option value="cicilan">Cicilan Kartu Kredit</option>
+                    <option value="alfamart">Alfamart</option>
+                    <option value="indomart">Indomart</option>
+                    <option value="shopeepay">Shopeepay</option>
+                    <option value="ovo">OVO</option>
+                </select><br>
+
+                <label>Konfirmasi Password</label><br>
+                <input type="password" name="password" required><br>
+
+                <input class="input-berlangganan" type="submit" value="Berlangganan">
+            </form>
+        </div>
+
+        <footer>
+            <p>SUBS by Muhamad Helmi Adhfandi</p>
+        </footer>
+    </body>
+</html>

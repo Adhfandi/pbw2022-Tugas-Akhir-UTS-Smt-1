@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Contact Us">
+        <meta name="keyword" content="HTML, TAGS, CSS, Element">
+        <meta name="author" content="Helmi Adhfandi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+        <title>Contact Us</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: calibri;
+            }
+
+            /*Header CSS Start*/
+            header {
+                background-color: rgb(191, 191, 191); 
+                text-align: center;
+                height: 12vh;
+            }
+
+            header img {
+                width: 6vh;
+                border-radius: 5px;
+            }
+
+            header nav {
+                text-align: center;
+                margin-top: 4px;
+            }
+            
+            header nav a {
+                padding: 5px; 
+                margin: 0px;
+                color: black;
+                font-size: 3vh; 
+                text-decoration: none;
+            }
+
+            header nav a:hover {
+                background-color: rgb(214, 214, 214);
+                transition: .5s ease-in-out;
+                transition-delay: .2s;
+                border-radius: 5px;
+            }
+            /*Header CSS End*/
+
+            /*Div CSS Start*/
+            div {
+                background-color: rgba(189, 189, 189, 0.331);
+                height: 85vh;
+                overflow: auto;
+            }
+
+            div > h2 {
+                margin: 0px; 
+                padding-top: 15px; 
+                padding-bottom: 20px;
+                margin-left: 15px;
+            }
+
+            div > form {
+                margin-left: 35px;
+            }
+
+            .input-email {
+                margin-bottom: 30px;
+            }
+
+            .input-nama {
+                margin-left: 15px;
+            }
+
+            .input-tanggal-lahir {
+                margin-left: 42px;
+            }
+
+            div form h4 {
+                margin-top: 30px;
+                margin-bottom: 0px;
+            }
+
+            .input-negara {
+                margin-left: 95px;
+            }
+
+            .input-provinsi {
+                margin-left: 90px;
+            }
+
+            .input-kabupaten-kota {
+                margin-left: 29px;
+            }
+
+            .input-kecamatan-distrik {
+                margin-left: 15px;
+            }
+
+            .input-kelurahan-desa {
+                margin-bottom: 30px;
+                margin-left: 31px;
+            }
+
+            .input-kirim {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            /*Div CSS End*/
+
+            /*Footer CSS Start*/
+            footer {
+                text-align: center; 
+                background-color: rgb(191, 191, 191);
+                height: 3vh;
+            }
+
+            footer > p {
+                margin: 0px;
+            }
+            /*Footer CSS End*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="media/SUBSlogo.jpg" alt="logo">
+            <nav>
+                <a href="indext.html">Home</a>
+                <a href="#">Contact us</a>
+                <a href="aboutus.html">About us</a>
+            </nav>
+        </header>
+
+        <div>
+            <h2>Contact Us</h2>
+            <form name="contac-us">
+                <label>Email</label><br>
+                <input class="input-email" type="email" name="email"><br>
+
+                <label>Masukkan Nama Anda<input class="input-nama" type="text" name="nama" id="nama" required></label><br>
+                <label>Tanggal lahir Anda<input class="input-tanggal-lahir" type="text" name="tanggallahir" id="tanggal-lahir" required></label><br>
+                
+                <h4>Asal</h4>
+                <label>Negara<input class="input-negara" type="text" name="negara" id="negara" required></label><br>
+                <label>Provinsi<input class="input-provinsi" type="text" name="provinsi" id="profinci"></label><br>
+                <label>Kabupaten / Kota<input class="input-kabupaten-kota" type="text" name="kabupaten/kota" id="kabupaten/ukota" required></label><br>
+                <label>Kecamatan / Distrik<input class="input-kecamatan-distrik" type="text" name="kecamatan/distrik" id="kecamatan/distrik"></label><br>
+                <label>Kelurahan / Desa<input class="input-kelurahan-desa" type="text" name="kelurahan/desa" id="kelurahan/desa"></label><br>
+
+                <label>Pesan atau Kritik</label><br>
+                <textarea name="pesan atau kritikan" placeholder="Masukkan pesan atau kritikan tentang SUBS" rows="4" cols="55" required></textarea><br>
+
+                <input class="input-kirim" type="submit" value="Kirim">
+            </form>
+        </div>
+
+        <footer>
+            <p>SUBS by Muhamad Helmi Adhfandi</p>
+        </footer>
+    </body>
+</html>

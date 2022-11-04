@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Paket Karyawan">
+        <meta name="keyword" content="HTML, TAGS, CSS, Element">
+        <meta name="author" content="Helmi Adhfandi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+        <title>Paket Karyawan</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: calibri;
+            }
+
+            /*Header CSS Start*/
+            header {
+                background-color: rgb(191, 191, 191); 
+                text-align: center;
+                height: 12vh;
+            }
+
+            header img {
+                width: 6vh;
+                border-radius: 5px;
+            }
+
+            header nav {
+                text-align: center;
+                margin-top: 4px;
+            }
+            
+            header nav a {
+                padding: 5px; 
+                margin: 0px;
+                color: black;
+                font-size: 3vh; 
+                text-decoration: none;
+            }
+
+            header nav a:hover {
+                background-color: rgb(214, 214, 214);
+                transition: .5s ease-in-out;
+                transition-delay: .2s;
+                border-radius: 5px;
+            }
+            /*Header CSS End*/
+
+            /*Form CSS*/
+            div {
+                background-color: rgba(189, 189, 189, 0.331);
+                height: 85vh;
+                overflow: auto;
+            }
+
+            div h2 {
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-bottom: 0px;
+            }
+
+            div p {
+                margin-left: 15px;
+                margin-top: 0px;
+            }
+
+            div form {
+                margin-left: 35px;
+            }
+
+            div form h4 {
+                margin-top: 30px;
+                margin-bottom: 0px;
+            }
+
+            .input-email {
+                margin-left: 146px;
+            }
+
+            .input-pekerjaan {
+                margin-left: 118px;
+            }
+
+            .input-perusahaan-kantor {
+                margin-left: 15px;
+            }
+
+            .input-id {
+                margin-left: 169px;
+            }
+
+            .input-nomor-e-money {
+                margin-left: 75px;
+                margin-bottom: 30px;
+            }
+
+            .input-daftar {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            /*Form CSS End*/
+
+            /*Footer CSS Start*/
+            footer {
+                text-align: center; 
+                background-color: rgb(191, 191, 191);
+                height: 3vh;
+            }
+
+            footer p {
+                margin: 0px;
+            }
+            /*Footer CSS End*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="media/SUBSlogo.jpg" alt="logo">
+            <nav>
+                <a href="indext.html">Home</a>
+                <a href="contactus.html">Contact us</a>
+                <a href="aboutus.html">About us</a>
+            </nav>
+        </header>
+
+        <div>
+            <h2>Paket Karyawan</h2>
+            <p>Masukkan data diri anda</p>
+
+            <form name="paket-karyawan">
+                <h4>Paket Karyawan</h4>
+                <label>Email <input class="input-email" type="email" name="email" required></label><br>
+                <label>Pekerjaan <input class="input-pekerjaan" type="text" name="pekerjaan" id="pekerjaan" required></label><br>
+                <label>Nama Perusahaan/Kantor </label><input class="input-perusahaan-kantor" type="text" name="perusahaan/kantor" id="perusahaan/kantor" required><br>
+                <label>ID </label><input class="input-id" type="text" name="id" id="id" required><br>
+                <label>Nomor E-Money </label><input class="input-nomor-e-money" type="number" name="nomor-e-money" id="nomor-e-money" required><br>
+
+                <label>Konfirmasi Password Email</label><br>
+                <input type="password" name="password" required><br>
+
+                <input class="input-daftar" type="submit" value="Daftar">
+            </form>
+        </div>
+
+        <footer>
+            <p>SUBS by Muhamad Helmi Adhfandi</p>
+        </footer>
+    </body>
+</html>

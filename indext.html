@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Home">
+        <meta name="keyword" content="HTML, TAGS, CSS, Element">
+        <meta name="author" content="Helmi Adhfandi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+        <title>SUBS</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: calibri;
+            }
+
+            /*Header CSS Start*/
+            header {
+                background-color: rgb(191, 191, 191); 
+                text-align: center;
+                height: 12vh;
+            }
+
+            header img {
+                width: 6vh;
+                border-radius: 5px;
+            }
+
+            header nav {
+                text-align: center;
+                margin-top: 4px;
+            }
+            
+            header nav a {
+                padding: 5px; 
+                margin: 0px;
+                color: black;
+                font-size: 3vh; 
+                text-decoration: none;
+            }
+
+            header nav a:hover {
+                background-color: rgb(214, 214, 214);
+                transition: .5s ease-in-out;
+                transition-delay: .2s;
+                border-radius: 5px;
+            }
+            /*Header CSS End*/
+
+            /*Section CSS Start*/
+            .container {
+                background-color: rgba(189, 189, 189, 0.331);
+                height: 85vh;
+                overflow: auto;
+            }
+
+            h2 {
+                margin-left: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            section {
+                overflow-x: auto;
+                margin-left: 15px;
+                margin-right: 15px;
+                
+                display: flex;
+            }
+
+            section ul {
+                list-style-type: none; 
+                width: 200px;
+                margin: 10px; 
+                padding-left: 0px; 
+                padding-bottom: 5px; 
+                border-radius: 5px; 
+                background-color: rgb(183, 153, 230);
+            }
+
+            section ul li h4 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+
+            section ul li img {
+                width: 200px;
+            }
+
+            section ul li a {
+                list-style: none; 
+                margin-top: 0px; 
+                padding-top: 5px; 
+                padding-bottom: 5px;
+                color: black;
+                font-size: 15px; 
+                text-decoration: none;
+            }
+
+            .a-transportasi {
+                padding-left: 59px; 
+                padding-right: 58px;
+            }
+
+            .a-paket-berlangganan {
+                padding-left: 80px;
+                padding-right: 81px;
+            }
+
+            .a-event {
+                padding-left: 59px;
+                padding-right: 60px;
+            }
+            /*Section CSS End*/
+
+            /*Footer CSS Start*/
+            footer {
+                text-align: center; 
+                background-color: rgb(191, 191, 191);
+                height: 3vh;
+            }
+
+            footer > p {
+                margin: 0px;
+            }
+            /*Footer CSS End*/
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <img src="media/SUBSlogo.jpg" alt="logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="contactus.html">Contact us</a>
+                <a href="aboutus.html">About us</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <!--Moda Transportasi Start-->
+            <h2>Transportasi</h2>
+            <section>
+                <ul>
+                    <li>
+                        <h4>Bus Rapit Transit (BRT)</h4>
+                    </li>
+                    <li>
+                        <img src="media/brt.jpg" alt="Trans Jakarta">
+                    </li>
+                    <li>
+                        <a class="a-transportasi" href="brt.html">Berlangganan</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Mass Rapit Transit (MRT)</h4>
+                    </li>
+                    <li>
+                        <img src="media/mrt.jpg" alt="Mass Rapit Transit">
+                    </li>
+                    <li>
+                        <a class="a-transportasi" href="mrt.html">Berlangganan</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Commuter Line (KRL)</h4>
+                    </li>
+                    <li>
+                        <img src="media/krl.jpg" alt="Commuter Line">
+                    </li>
+                    <li>
+                        <a class="a-transportasi" href="krl.html">Berlangganan</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Light Rail Transit (LRT)</h4>
+                    </li>
+                    <li>
+                        <img src="media/lrt.jpg" alt="Light Rail Transit">
+                    </li>
+                    <li>
+                        <a class="a-transportasi" href="lrt.html">Berlangganan</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Train (Kereta Api)</h4>
+                    </li>
+                    <li>
+                        <img src="media/train.jpg" alt="Train">
+                    </li>
+                    <li>
+                        <a class="a-transportasi" href="train.html">Berlangganan</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>High Speed Rail (HSR)</h4>
+                    </li>
+                    <li>
+                        <img src="media/underconstruction.jpg" alt="High Speed Rail">
+                    </li>
+                    <li>
+                        <a class="a-transportasi" href="hsr.html">Berlangganan</a>
+                    </li>
+                </ul>
+            </section>
+            <!--Moda Transportasi End-->
+
+            <!--Paket Berlangganan Start-->
+            <h2>Paket Berlangganan</h2>
+            <section>
+                <ul>
+                    <li>
+                        <h4>Paket Pelajar</h4>
+                    </li>
+                    <li>
+                        <img src="media/school.jpg" alt="School">
+                    </li>
+                    <li>
+                        <a class="a-paket-berlangganan" href="pelajar.html">Daftar</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Paket Karyawan</h4>
+                    </li>
+                    <li>
+                        <img src="media/office.jpg" alt="Office">
+                    </li>
+                    <li>
+                        <a class="a-paket-berlangganan" href="karyawan.html">Daftar</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Paket Keluarga</h4>
+                    </li>
+                    <li>
+                        <img src="media/family.jpg" alt="Family">
+                    </li>
+                    <li>
+                        <a class="a-paket-berlangganan" href="keluarga.html">Daftar</a>
+                    </li>
+                </ul>
+            </section>
+            <!--Paket berlangganan End-->
+
+            <!--Event Start-->
+            <h2>Event</h2>
+            <section>
+                <ul>
+                    <li>
+                        <h4>Hari Sumpah Pemuda</h4>
+                    </li>
+                    <li>
+                        <img src="media/comingsoon.jpg" alt="Hari Sumpah Pemuda">
+                    </li>
+                    <li>
+                        <a class="a-event" href="#">Coming soon</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Hari Pahlawan</h4>
+                    </li>
+                    <li>
+                        <img src="media/comingsoon.jpg" alt="Hari Pahlawan">
+                    </li>
+                    <li>
+                        <a class="a-event" href="#">Coming soon</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Hari Ayah</h4>
+                    </li>
+                    <li>
+                        <img src="media/comingsoon.jpg" alt="Hari Ayah">
+                    </li>
+                    <li>
+                        <a class="a-event" href="#">Coming soon</a>
+                    </li>
+                </ul>
+            </section>
+            <!--Event End-->
+        </div>
+
+        <footer>
+            <p>SUBS by Muhamad Helmi Adhfandi</p>
+        </footer>
+    </body>
+</html>
